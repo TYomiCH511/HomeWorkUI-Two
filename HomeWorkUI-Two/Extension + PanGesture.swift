@@ -22,7 +22,9 @@ extension SecondViewController {
             guard let panGestureAnchorPoint = panGestureAnchorPoint else { assert(false); return }
             
             let gesturePoint = gestureRecognizer.location(in: view)
-             
+            
+//            проверяем на выход за границу экрана
+            
             if carImage.frame.minX < view.frame.minX + 5 {
                 centerXConstraint.constant = -((view.frame.maxX - carImage.frame.width - 10) / 2 )
             }
@@ -30,14 +32,10 @@ extension SecondViewController {
             if carImage.frame.maxX > view.frame.maxX - 5 {
                 centerXConstraint.constant = ((view.frame.maxX - carImage.frame.width - 10) / 2 )
             }
-        
-                centerXConstraint.constant += gesturePoint.x - panGestureAnchorPoint.x
-                print(carImage.frame.minX)
-            print(centerXConstraint.constant)
-            print(view.frame.maxX)
-            print(carImage.frame.width)
-                self.panGestureAnchorPoint = gesturePoint
-                
+            
+            centerXConstraint.constant += gesturePoint.x - panGestureAnchorPoint.x
+            self.panGestureAnchorPoint = gesturePoint
+            
         case .cancelled, .ended:
             panGestureAnchorPoint = nil
             

@@ -10,7 +10,7 @@ import UIKit
 class MainScreen: UIView {
     
     
-//    MARK: - Create main screen
+    //    MARK: - Create main screen
     
     var mainImage: UIImageView = {
         let image = UIImageView()
@@ -21,9 +21,6 @@ class MainScreen: UIView {
         return image
     }()
     
-    
-    
-    
     var nameGame: UIImageView = {
         let image = UIImageView()
         
@@ -33,8 +30,7 @@ class MainScreen: UIView {
         return image
     }()
     
-    
-//     Score label
+    //     Score label
     
     var labelScore: UILabel = {
         let score = UILabel()
@@ -51,7 +47,7 @@ class MainScreen: UIView {
         return score
     }()
     
-//    Best score??
+    //    Best score??
     
     let bestScore: UILabel = {
         let score = UILabel()
@@ -67,7 +63,7 @@ class MainScreen: UIView {
         return score
     }()
     
-//     create button Game start
+    //     create button Game start
     
     let gameStart: UIButton = {
         let start = UIButton(type: .system)
@@ -116,17 +112,18 @@ class MainScreen: UIView {
         gameStart.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -140).isActive = true
         gameStart.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 80).isActive = true
         gameStart.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -80).isActive = true
-       
+        
     }
-   
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc func generateRandomNumber() {
-         
-     labelScore.text = String(Int.random(in: 0...100))
-        
-     }
+    //    MARK: - generate random number for Label
     
+    @objc func generateRandomNumber() {
+        
+        labelScore.text = String(Int.random(in: 0...100))
+        
+    }
 }
