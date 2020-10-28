@@ -16,6 +16,7 @@
 		AC5F0A892544AD0900789273 /* MainScreen + UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F0A882544AD0900789273 /* MainScreen + UIElements.swift */; };
 		ACC7EDE5254605C70063D478 /* Extensios + CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EDE4254605C70063D478 /* Extensios + CA.swift */; };
 		ACDE752C2545FA510053B3FD /* Extension + ToSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDE752B2545FA510053B3FD /* Extension + ToSecondVC.swift */; };
+		ACE03D83254981E5000E18BE /* Extension + PanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE03D82254981E5000E18BE /* Extension + PanGesture.swift */; };
 		ACFA06E62544B94400FE4EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFA06E52544B94400FE4EA6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		AC5F0A882544AD0900789273 /* MainScreen + UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreen + UIElements.swift"; sourceTree = "<group>"; };
 		ACC7EDE4254605C70063D478 /* Extensios + CA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensios + CA.swift"; sourceTree = "<group>"; };
 		ACDE752B2545FA510053B3FD /* Extension + ToSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ToSecondVC.swift"; sourceTree = "<group>"; };
+		ACE03D82254981E5000E18BE /* Extension + PanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + PanGesture.swift"; sourceTree = "<group>"; };
 		ACFA06E52544B94400FE4EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				AC5F0A882544AD0900789273 /* MainScreen + UIElements.swift */,
 				ACDE752B2545FA510053B3FD /* Extension + ToSecondVC.swift */,
 				ACC7EDE4254605C70063D478 /* Extensios + CA.swift */,
+				ACE03D82254981E5000E18BE /* Extension + PanGesture.swift */,
 			);
 			name = "Extensions + Model";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				ACDE752C2545FA510053B3FD /* Extension + ToSecondVC.swift in Sources */,
 				ACC7EDE5254605C70063D478 /* Extensios + CA.swift in Sources */,
 				AC5F0A6C2544760000789273 /* AppDelegate.swift in Sources */,
+				ACE03D83254981E5000E18BE /* Extension + PanGesture.swift in Sources */,
 				AC5F0A892544AD0900789273 /* MainScreen + UIElements.swift in Sources */,
 				AC5F0A6E2544760000789273 /* SceneDelegate.swift in Sources */,
 			);

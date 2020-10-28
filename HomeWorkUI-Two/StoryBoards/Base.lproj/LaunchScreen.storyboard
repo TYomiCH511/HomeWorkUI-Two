@@ -15,17 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Name" translatesAutoresizingMaskIntoConstraints="NO" id="oLr-pO-OK9">
-                                <rect key="frame" x="20" y="393" width="374" height="110"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Name" translatesAutoresizingMaskIntoConstraints="NO" id="fPU-vo-RDA">
+                                <rect key="frame" x="30" y="384" width="354" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="esq-iS-rnJ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.5695098806073714" green="0.50506420150299047" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="oLr-pO-OK9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9Uj-GV-S4h"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oLr-pO-OK9" secondAttribute="trailing" constant="20" id="Dlm-dV-OPD"/>
-                            <constraint firstItem="oLr-pO-OK9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="M7F-FY-Nl9"/>
-                            <constraint firstItem="oLr-pO-OK9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Zet-HP-ole"/>
+                            <constraint firstItem="fPU-vo-RDA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="5WJ-Hj-Fy6"/>
+                            <constraint firstItem="fPU-vo-RDA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="83m-4C-5bf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fPU-vo-RDA" secondAttribute="trailing" constant="30" id="i1O-iu-8I5"/>
+                            <constraint firstItem="fPU-vo-RDA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kMF-3L-FAo"/>
                         </constraints>
                     </view>
                 </viewController>
