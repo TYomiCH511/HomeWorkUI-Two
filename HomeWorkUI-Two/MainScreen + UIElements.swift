@@ -9,15 +9,12 @@ import UIKit
 
 class MainScreen: UIView {
     
-    
     //    MARK: - Create main screen
-    
     var mainImage: UIImageView = {
         let image = UIImageView()
         
         image.image = UIImage(named: "Start")
         image.translatesAutoresizingMaskIntoConstraints = false
-        
         return image
     }()
     
@@ -26,14 +23,11 @@ class MainScreen: UIView {
         
         image.image = UIImage(named: "Name")
         image.translatesAutoresizingMaskIntoConstraints = false
-        
         return image
     }()
     
-    //     Score label
-    
-    var labelScore: UILabel = {
-        let score = UILabel()
+    var labelScore: IndentOfSide = {
+        let score = IndentOfSide()
         
         score.translatesAutoresizingMaskIntoConstraints = false
         score.textAlignment = .center
@@ -43,14 +37,11 @@ class MainScreen: UIView {
         score.font = .systemFont(ofSize: 60, weight: .black)
         score.adjustsFontSizeToFitWidth = true
         score.isUserInteractionEnabled = true
-        
         return score
     }()
     
-    //    Best score??
-    
-    let bestScore: UILabel = {
-        let score = UILabel()
+    let bestScore: IndentOfSide = {
+        let score = IndentOfSide()
         
         score.translatesAutoresizingMaskIntoConstraints = false
         score.textAlignment = .center
@@ -59,11 +50,8 @@ class MainScreen: UIView {
         score.backgroundColor = .red
         score.font = .systemFont(ofSize: 40, weight: .black)
         score.adjustsFontSizeToFitWidth = true
-        
         return score
     }()
-    
-    //     create button Game start
     
     let gameStart: UIButton = {
         let start = UIButton(type: .system)
@@ -76,13 +64,11 @@ class MainScreen: UIView {
         start.setTitleColor(.black, for: .normal)
         start.titleLabel?.adjustsFontSizeToFitWidth = true
         start.pulsate()
-        
         return start
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         addSubview(mainImage)
         mainImage.topAnchor.constraint(equalTo: topAnchor, constant: 0).isActive = true
         mainImage.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0).isActive = true
@@ -96,8 +82,7 @@ class MainScreen: UIView {
         
         addSubview(labelScore)
         labelScore.topAnchor.constraint(equalTo: topAnchor, constant: 220).isActive = true
-        labelScore.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 130).isActive = true
-        labelScore.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -130).isActive = true
+        labelScore.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
         let tapLabbel = UITapGestureRecognizer(target: self, action: #selector(generateRandomNumber))
         tapLabbel.numberOfTapsRequired = 2
@@ -105,8 +90,7 @@ class MainScreen: UIView {
         
         addSubview(bestScore)
         bestScore.topAnchor.constraint(equalTo: topAnchor, constant: 310).isActive = true
-        bestScore.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 90).isActive = true
-        bestScore.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -90).isActive = true
+        bestScore.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
         addSubview(gameStart)
         gameStart.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -140).isActive = true

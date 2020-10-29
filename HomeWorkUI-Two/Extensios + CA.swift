@@ -21,6 +21,5 @@ extension UIButton {
         pulse.damping = 1
         pulse.repeatCount = 11111
         layer.add(pulse, forKey: nil)
-        
     }
 }

@@ -8,20 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var myView = MainScreen()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
-        myView.gameStart.addTarget(self, action: #selector(press), for: .touchUpInside)
-        
-        view = myView
-        
+        configure()
     }
     
- }
+    private func configure() {
+        myView.gameStart.addTarget(self, action: #selector(pressGameStart), for: .touchUpInside)
+        view = myView
+    }
+}
 

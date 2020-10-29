@@ -18,10 +18,18 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configure()
+    }
+    
+    private func configure() {
+        
         panGestureRecognizer.addTarget(self, action: #selector(handlePanGesture(_:)))
         panGestureRecognizer.maximumNumberOfTouches = 1
         view.addGestureRecognizer(panGestureRecognizer)
-    
     }
-   
+    
+    @IBAction func goToViewController() {
+        dismiss(animated: true)
+    }
+    
 }
