@@ -13,13 +13,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configure()
-    }
-    
-    private func configure() {
-        myView.gameStart.addTarget(self, action: #selector(pressGameStart), for: .touchUpInside)
-        view = myView
+         configure()
     }
 }
 

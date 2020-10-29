@@ -17,4 +17,9 @@ extension ViewController {
     override func viewDidLayoutSubviews() {
         myView.gameStart.layer.cornerRadius = myView.gameStart.frame.height / 2
     }
+    
+    func configure() {
+        myView.gameStart.addTarget(self, action: #selector(pressGameStart), for: .touchUpInside)
+        view = myView
+    }
 }

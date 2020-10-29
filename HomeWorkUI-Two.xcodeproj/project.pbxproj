@@ -14,6 +14,7 @@
 		AC5F0A782544760100789273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5F0A762544760100789273 /* LaunchScreen.storyboard */; };
 		AC5F0A84254478E500789273 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F0A83254478E500789273 /* SecondViewController.swift */; };
 		AC5F0A892544AD0900789273 /* MainScreen + UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F0A882544AD0900789273 /* MainScreen + UIElements.swift */; };
+		ACBA0BED254B062B009F0AE3 /* Extension + SecondVC configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA0BEC254B062B009F0AE3 /* Extension + SecondVC configure.swift */; };
 		ACC7EDE5254605C70063D478 /* Extensios + CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC7EDE4254605C70063D478 /* Extensios + CA.swift */; };
 		ACDE752C2545FA510053B3FD /* Extension + ToSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDE752B2545FA510053B3FD /* Extension + ToSecondVC.swift */; };
 		ACE03D83254981E5000E18BE /* Extension + PanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE03D82254981E5000E18BE /* Extension + PanGesture.swift */; };
@@ -31,6 +32,7 @@
 		AC5F0A792544760100789273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC5F0A83254478E500789273 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AC5F0A882544AD0900789273 /* MainScreen + UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreen + UIElements.swift"; sourceTree = "<group>"; };
+		ACBA0BEC254B062B009F0AE3 /* Extension + SecondVC configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + SecondVC configure.swift"; sourceTree = "<group>"; };
 		ACC7EDE4254605C70063D478 /* Extensios + CA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensios + CA.swift"; sourceTree = "<group>"; };
 		ACDE752B2545FA510053B3FD /* Extension + ToSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ToSecondVC.swift"; sourceTree = "<group>"; };
 		ACE03D82254981E5000E18BE /* Extension + PanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + PanGesture.swift"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				ACDE752B2545FA510053B3FD /* Extension + ToSecondVC.swift */,
 				ACC7EDE4254605C70063D478 /* Extensios + CA.swift */,
 				ACE03D82254981E5000E18BE /* Extension + PanGesture.swift */,
+				ACBA0BEC254B062B009F0AE3 /* Extension + SecondVC configure.swift */,
 			);
 			name = "Extensions + Model";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBA0BED254B062B009F0AE3 /* Extension + SecondVC configure.swift in Sources */,
 				ACF6FEFB254ADB3D005170D6 /* UILabel + CastomSize.swift in Sources */,
 				AC5F0A84254478E500789273 /* SecondViewController.swift in Sources */,
 				AC5F0A702544760000789273 /* ViewController.swift in Sources */,

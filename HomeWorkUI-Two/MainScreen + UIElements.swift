@@ -105,7 +105,7 @@ class MainScreen: UIView {
     
     //    MARK: - generate random number for Label
     
-    @objc func generateRandomNumber() {
+    @objc private func generateRandomNumber() {
         
         labelScore.text = String(Int.random(in: 0...100))
         
